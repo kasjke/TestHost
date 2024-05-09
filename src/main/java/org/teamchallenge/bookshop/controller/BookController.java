@@ -18,14 +18,12 @@ public class BookController {
 
     @PostMapping("/add")
     public ResponseEntity<Void> addBook(@RequestBody BookDto bookDto ) {
-        bookService.addBook(bookDto);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
     @PreAuthorize("hasRole('USER')")
     @GetMapping("/{id}")
     public ResponseEntity<BookDto> getBookById(@PathVariable  Long id) {
-        BookDto bookDto = bookService.getBookById(id);
-        return ResponseEntity.ok(bookDto);
+        return null;
     }
 
 }

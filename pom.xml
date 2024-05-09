@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>6.1.1</version>
+			<version>6.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mapstruct</groupId>
@@ -150,6 +150,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 
